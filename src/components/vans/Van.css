@@ -1,0 +1,34 @@
+.van--wrapper{ 
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.van--wrapper img { 
+    border-radius: 5px;
+}
+
+.van--wrapper .van--info { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    color: #161616;
+}
+.van--wrapper .van--info p { 
+    position: relative;
+}
+
+.van--wrapper .van--info p small { 
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-weight: 300;
+}
+.simple { 
+    background-color: #E17654;
+}
+.rugged { 
+    background-color: #115E59;
+}

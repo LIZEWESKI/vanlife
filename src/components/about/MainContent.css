@@ -1,9 +1,9 @@
-main {
+.about--main {
     background-color: #FFF7ED;
     color: #161616;
     min-height: 80vh;
 }
-main img {
+.about--main img {
   width: 100%;    
   height: auto; 
   object-fit: cover; 
@@ -11,7 +11,7 @@ main img {
   margin: 0 auto; 
 }
 @media screen and (min-width: 700px) {
-    main img {
+    .about--main img {
         width: 50%;      
         margin-right: 20px; 
         float: left;
@@ -19,7 +19,7 @@ main img {
         border-radius: 30px;
     }
 }
-main .content--wrapper {
+.about--main .content--wrapper {
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -29,11 +29,11 @@ main .content--wrapper {
     text-align: start;
     /* height: 100vh; */
 }
-main .content--wrapper h1 {
+.about--main .content--wrapper h1 {
     font-size: 32px;
     font-weight: 700;
 }
-main .explore--wrapper { 
+.about--main .explore--wrapper { 
     background-color: #FFCC8D;
     border-radius: 5px;
     padding: 1em;
@@ -42,10 +42,10 @@ main .explore--wrapper {
     justify-content: start; */
     gap: 1em;
 }
-main .explore--wrapper div {
+.about--main .explore--wrapper div {
     margin-bottom: 0.5em;
 }
-main .explore--wrapper div p {
+.about--main .explore--wrapper div p {
     font-weight: 900;
     font-size: 24px;
 }

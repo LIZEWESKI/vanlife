@@ -4,7 +4,7 @@ import AboutImg from '../../assets/vanlife-about-img.png'
 import './MainContent.css'
 const MainContent = () => {
   return (
-    <main>
+    <main className='about--main'>
         <img src={AboutImg} alt="man-in-van" />
         <div className="content--wrapper">
             <h1>

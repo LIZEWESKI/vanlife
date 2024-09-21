@@ -1,4 +1,4 @@
-.main--wrapper {
+.home--main {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url('../../assets/bg-hero.png');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -14,12 +14,12 @@
     flex-direction: column;
     gap: 1.3em;
 }
-.main--wrapper h1 {
+.home--main h1 {
     font-weight: 900;
     font-size: 36px;
     font-family: inherit;
 }
-.main--wrapper button {
+.home--main button {
     background-color: #FF8C38;
     color: #ffffff;
     font-family: inherit;
@@ -28,6 +28,6 @@
     border-radius: 5px;
     margin-top: 1.3em;
 }
-.main--wrapper button:hover {
+.home--main button:hover {
     border-color: #252525;
 }

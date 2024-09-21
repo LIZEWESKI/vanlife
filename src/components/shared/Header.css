@@ -7,6 +7,7 @@ header {
     align-items: center;
     padding: 1em;
     background-color: #FFF7ED;
+    z-index: 100;
 }
 .brand--title {
     font-weight: 900;
