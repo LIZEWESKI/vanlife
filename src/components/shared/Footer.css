@@ -1,0 +1,17 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #252525;
+    /* margin-top: auto;  */
+    position: relative;  
+    /* bottom: 0;
+    width: 100%; */
+}
+footer p {
+    color: #AAAAAA;
+    font-family: inherit;
+    font-size: 14px;
+    pointer-events: none;
+}

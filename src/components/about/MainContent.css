@@ -1,0 +1,51 @@
+main {
+    background-color: #FFF7ED;
+    color: #161616;
+    min-height: 80vh;
+}
+main img {
+  width: 100%;    
+  height: auto; 
+  object-fit: cover; 
+  max-width: 700px;  
+  margin: 0 auto; 
+}
+@media screen and (min-width: 700px) {
+    main img {
+        width: 50%;      
+        margin-right: 20px; 
+        float: left;
+        padding: 1em;
+        border-radius: 30px;
+    }
+}
+main .content--wrapper {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    text-align: start;
+    /* height: 100vh; */
+}
+main .content--wrapper h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+main .explore--wrapper { 
+    background-color: #FFCC8D;
+    border-radius: 5px;
+    padding: 1em;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: start; */
+    gap: 1em;
+}
+main .explore--wrapper div {
+    margin-bottom: 0.5em;
+}
+main .explore--wrapper div p {
+    font-weight: 900;
+    font-size: 24px;
+}

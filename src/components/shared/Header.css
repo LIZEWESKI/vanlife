@@ -1,0 +1,27 @@
+header {
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #FFF7ED;
+}
+.brand--title {
+    font-weight: 900;
+    font-size: 26px;
+}
+ul {
+    display: flex;
+    gap: 1em;
+}
+li a {
+    color: #4D4D4D;
+    font-weight: 500;
+    font-size: 16px;
+}
+li a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
