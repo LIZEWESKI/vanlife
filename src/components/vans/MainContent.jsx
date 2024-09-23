@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import ClipLoader from "react-spinners/ClipLoader";
 import './MainContent.css'
 import Van from './Van'
 const MainContent = () => {
@@ -9,7 +10,6 @@ const MainContent = () => {
       .then(data => setVans(data.vans))
         .catch(error => console.error('Error:', error));  
   },[])
-  // console.log(vans)
   return (
     <main className='vans--main'>
         <h1>Explore our van options</h1>
@@ -20,7 +20,7 @@ const MainContent = () => {
             <span>Clear filters</span>
         </div>
         <div className="vans--grid">
-            {vans.map(van => <Van key={van.id} van={van}/>)}
+            {vans.length === 0 ? <ClipLoader/> : vans.map(van => <Van key={van.id} van={van}/>)}
         </div>
     </main>
   )
