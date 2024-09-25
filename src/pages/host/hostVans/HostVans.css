@@ -1,0 +1,35 @@
+.hostvans__title { 
+    font-weight: 900;
+    font-size: 32px;
+}
+.hostvans__main .listed-vans__wrapper { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min(450px));
+    justify-content: center;
+    align-items: center;
+    gap: 1.3em;
+    margin-top: 30px;
+}
+.hostvans__main .van__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.3em;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 1em;
+}
+.hostvans__main .van__wrapper img { 
+    width: 100px;
+    border-radius: 5px;
+}
+
+.hostvans__main .van__wrapper .van__name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.hostvans__main .van__wrapper .van__price{
+    font-size: 15px;
+    font-weight: 600;
+    color: #4D4D4D;
+    font-family: inherit;
+}

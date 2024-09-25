@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import ClipLoader from "react-spinners/ClipLoader";
-import './MainContent.css'
+import './Vans.css'
 import Van from './Van'
-const MainContent = () => {
+const Vans = () => {
   const [vans,setVans] = useState([]);
   useEffect(()=> {
     fetch('/api/vans')
@@ -26,4 +26,4 @@ const MainContent = () => {
   )
 }
 
-export default MainContent
+export default Vans

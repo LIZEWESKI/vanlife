@@ -27,15 +27,14 @@
     font-weight: 300;
 }
 .van--main i {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  color: #fff;
-  pointer-events: none;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 4px 12px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 10px;
+    pointer-events: none;
 }
 .van--main .simple { 
     background-color: #E17654;

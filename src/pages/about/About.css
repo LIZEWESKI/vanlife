@@ -22,12 +22,10 @@
 .about--main .content--wrapper {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: column;
     gap: 1em;
     padding: 1em;
     text-align: start;
-    /* height: 100vh; */
 }
 .about--main .content--wrapper h1 {
     font-size: 32px;
@@ -37,9 +35,6 @@
     background-color: #FFCC8D;
     border-radius: 5px;
     padding: 1em;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: start; */
     gap: 1em;
 }
 .about--main .explore--wrapper div {

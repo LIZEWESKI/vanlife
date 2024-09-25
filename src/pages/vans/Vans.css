@@ -11,6 +11,7 @@
 }
 .vans--main .filter--wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 1em;
     align-items: center;
     margin-bottom: 25px;

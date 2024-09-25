@@ -1,0 +1,10 @@
+.host__main{
+    background-color: #FFF7ED;
+    color: #161616;
+    min-height: 80vh;
+    padding: 1em;
+}
+.host__nav ul { 
+    display: flex;
+    gap: 1em;
+}

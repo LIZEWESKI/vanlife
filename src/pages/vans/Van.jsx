@@ -8,7 +8,7 @@ const Van = ({van}) => {
   return (
     <div className='van--main'>
       {/* aria-label for screen-readers */}
-      <Link to={`/vans/${van.id}/${van.name}`} aria-label={`View details for ${van.name}, priced at $${van.price} per day`}>
+      <Link to={`/vans/${van.id}`} aria-label={`View details for ${van.name}, priced at $${van.price} per day`}>
         <div className='van--wrapper'>
             <img src={van.imageUrl} alt={`Image of ${van.name}`}/>
             <div className="van--info">

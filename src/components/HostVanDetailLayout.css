@@ -1,0 +1,146 @@
+
+.host-van-details__wrapper {
+    max-width: 650px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 20px auto;
+    background-color: #ffffff;
+}
+.host-van-details__info {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.host-van-details__info img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+.listed-vans__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+}
+.listed-vans__info i{
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 4px 12px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 4px;
+    align-self: flex-start;
+    pointer-events: none;
+}
+.host-van-details__wrapper .simple { 
+    background-color: #E17654;
+}
+.host-van-details__wrapper .rugged { 
+    background-color: #115E59;
+}
+
+.van__name {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.van__price {
+    font-size: 16px;
+    color: #161616;
+}
+
+.van__price span {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.host-van-details__nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 15px 0;
+}
+
+.host-van-details__nav li a {
+    color: #4D4D4D;
+    font-weight: 500;
+    font-size: 16px;
+}
+.host-van-details__nav li a:hover{
+    text-decoration: underline;
+    color: #000000;
+}
+.host-van-details__nav li a.link--selected {
+    color: #000000;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.host-van__details p {
+margin: 5px 0;
+line-height: 1.5;
+}
+
+.host-van__details p span {
+font-weight: bold;
+}
+
+@media (max-width: 768px) {
+.host-van-details__wrapper {
+    padding: 15px;
+}
+
+.host-van-details__wrapper i {
+    margin-top: 0;
+}
+
+.van__name {
+    font-size: 20px;
+}
+
+.van__price {
+    font-size: 16px;
+}
+
+.van__price span {
+    font-size: 18px;
+}
+
+.host-van-details__nav a {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.host-van__details p {
+    font-size: 14px;
+}
+}
+
+@media (max-width: 480px) {
+.host-van-details__wrapper {
+    padding: 10px;
+}
+
+.van__name {
+    font-size: 18px;
+}
+
+.van__price {
+    font-size: 14px;
+}
+
+.van__price span {
+    font-size: 16px;
+}
+
+.host-van-details__nav a {
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.host-van__details p {
+    font-size: 12px;
+}
+}

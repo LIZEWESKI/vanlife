@@ -1,4 +1,4 @@
-header {
+.main__header {
     position: fixed;
     top: 0;left: 0;right: 0;
     height: 70px;
@@ -13,16 +13,21 @@ header {
     font-weight: 900;
     font-size: 26px;
 }
-ul {
+.main__header ul {
     display: flex;
     gap: 1em;
 }
-li a {
+.main__header li a {
     color: #4D4D4D;
     font-weight: 500;
     font-size: 16px;
 }
-li a:hover {
+.main__header li a:hover{
+    text-decoration: underline;
     color: #000000;
+}
+.main__header li a.link--selected {
+    color: #000000;
+    font-weight: 700;
     text-decoration: underline;
 }

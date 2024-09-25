@@ -13,10 +13,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+a,a:visited {
   font-weight: 500;
   color: #000000;
   text-decoration: inherit;
+}
+main {
+  min-height: 79vh;
+  padding: 1em;
 }
 img {
   width: 100%;
