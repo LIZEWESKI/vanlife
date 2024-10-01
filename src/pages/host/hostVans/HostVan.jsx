@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const HostVan = ({van}) => {
   return (
-    <Link to={`/host/vanshost/${van.id}`}>
+    <Link to={`${van.id}`}>
         <div className="van__wrapper">
             <img src={van.imageUrl} alt={`Image of ${van.name} van`} />
             <div className="listed-vans__info">

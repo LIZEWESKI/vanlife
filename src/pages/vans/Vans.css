@@ -16,13 +16,56 @@
     align-items: center;
     margin-bottom: 25px;
 }
-.vans--main .filter--wrapper button { 
+.van-type {
+    height: 34px;
+    padding: 6px 26px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFEAD0;
+    color: #4D4D4D;
+    transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+.van-type:hover {
+    color: #FFEAD0;
+}
+.van-type:active {
+    outline: none;
+}
+.van-type.simple:hover, .van-type.simple.selected {
+    background-color: #E17654;
+    color: #fff;
+}
+
+.van-type.rugged:hover, .van-type.rugged.selected {
+    background-color: #115E59;
+    color: #fff;
+}
+
+.van-type.luxury:hover, .van-type.luxury.selected {
+    background-color: #161616;
+    color: #fff;
+}
+.van-type.clear-filters {
+    margin-left: -20px;
+    height: 34px;
+    padding: 6px 26px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    text-decoration: underline;
+    background-color: transparent;
+    color: #4D4D4D;
+}
+/* .vans--main .filter--wrapper button { 
     background-color: #FFEAD0;
     font-family: inherit;
     font-weight: 400;
     font-size: 16px;
     color: #4D4D4D;
-}
+} */
 .vans--main .filter--wrapper span { 
     text-decoration: underline;
     cursor: pointer;
