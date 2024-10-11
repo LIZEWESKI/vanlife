@@ -1,0 +1,37 @@
+.error-page {
+    background-color: #FFF7ED;
+    color: #161616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* Full height of the viewport */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .error-page h1 {
+    font-size: 3rem; /* Large font size for the error title */
+    margin-bottom: 10px;
+  }
+  
+  .error-page p {
+    font-size: 1.5rem; /* Medium font size for the error message */
+    margin-bottom: 20px;
+  }
+  
+  .retry-button {
+    background-color: #dc3545; /* Button background color */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 1rem;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .retry-button:hover {
+    background-color: #c82333; /* Darker shade on hover */
+  }
+  

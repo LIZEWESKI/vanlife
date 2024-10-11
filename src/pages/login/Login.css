@@ -1,0 +1,91 @@
+
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF7ED;
+    height: 80vh; /* Full height of the viewport */
+    padding: 1em;
+    color: #161616;
+}
+
+.login-container h1 {
+    font-size: 32px; /* Increase font size */
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: 600; /* Make heading bold */
+    color: #161616; /* Black color for the heading */
+}
+.login-container h3 { 
+    color: #cc0000
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Maximum width for the form */
+}
+
+input {
+    padding: 12px; /* Adjust padding */
+    color: #161616;
+    margin: 2px; /* Remove margin */
+    background-color: white; /* Set input background to white */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    font-size: 16px; /* Consistent font size */
+    width: 100%; /* Full width */
+}
+
+.login-container button {
+    padding: 12px;
+    background-color: #FF8C38; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners for button */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    margin-top: 20px; /* Add margin top for spacing */
+}
+
+.login-container button:hover {
+    background-color: #FF8C38; /* Darker button color on hover */
+}
+.login-container button:disabled {
+    background-color: #aaaaaa;
+    cursor: not-allowed;
+}
+
+.signup-prompt {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #161616; /* Dark gray for the text */
+}
+
+.signup-prompt a {
+    color: #FF8C38; /* Link color */
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.signup-prompt a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 500px) {
+    .login-container h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+}

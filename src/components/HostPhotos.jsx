@@ -1,7 +1,7 @@
 import React from 'react'
 import { useOutletContext } from 'react-router-dom'
 const HostPhotos = () => {
-    const {hostedVanDetail} = useOutletContext()
+    const {hostedVanDetailPromise} = useOutletContext()
     const imgStyle = {
         width: '100px',
         height: 'auto',
@@ -9,7 +9,7 @@ const HostPhotos = () => {
     }
   return (
     <div>
-        <img src={hostedVanDetail.imageUrl} alt={`Image of ${hostedVanDetail.name} van`} style={imgStyle} />
+        <img src={hostedVanDetailPromise.imageUrl} alt={`Image of ${hostedVanDetailPromise.name} van`} style={imgStyle} />
     </div>
   )
 }

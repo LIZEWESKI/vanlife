@@ -1,18 +1,23 @@
-import React ,{useState,useEffect} from 'react'
-import { useParams,Link , NavLink ,Outlet} from 'react-router-dom';
+import React , {Suspense}  from 'react'
+import { Link , NavLink ,Outlet, useLoaderData, defer, Await} from 'react-router-dom';
 import { FaArrowLeftLong } from "react-icons/fa6";
-import HostVanDetail from './HostVanDetail';
 import ClipLoader from "react-spinners/ClipLoader";
+import HostVanDetail from './HostVanDetail';
 import './HostVanDetailLayout.css'
+import { getHostVans } from '../api';
+import { requireAuth } from '../utils';
+// defer loader fun
+export async function loader({params,request}){
+  const hostVanDetailPromise = getHostVans(params.id)
+  await requireAuth(request)
+  return defer({hostVanDetail : hostVanDetailPromise  })
+}
+// export async function loader({params,request}){
+//   await requireAuth(request)
+//   return getHostVans(params.id)
+// }
 const HostVanDetailLayout = () => {
-  const {id} = useParams()
-  const [hostedVanDetail,setHostedVanDetail] = useState(null);
-  useEffect(()=> {
-    fetch(`/api/host/vans/${id}`)
-      .then(res => res.json())
-      .then(data => setHostedVanDetail(data.vans[0]))
-        .catch(error => console.error('Error:', error));  
-  },[id])
+  const hostedVanDetailPromise = useLoaderData()
   return (
     <main className='host-van-details__main'>
         <div className="link--wrapper">
@@ -20,19 +25,26 @@ const HostVanDetailLayout = () => {
           <Link className='link--vans' to=".." relative='path'>Back to all vans</Link>
         </div>
         <div className="host-van-details__wrapper">
-          {hostedVanDetail ? 
-            <HostVanDetail hostedVanDetail={hostedVanDetail}/>
-            : 
-            <ClipLoader/>
-          }
-          <nav className='host-van-details__nav'>
-            <ul>
-              <li><NavLink to="." end className={({isActive})=> isActive ? 'link--selected' : null }>Details</NavLink></li>
-              <li><NavLink to="pricing" className={({isActive})=> isActive ? 'link--selected' : null }>Pricing</NavLink></li>
-              <li><NavLink to='photos' className={({isActive})=> isActive ? 'link--selected' : null }>Photos</NavLink></li>
-            </ul>
-          </nav>
-          <Outlet context={{hostedVanDetail}}/>
+          <Suspense fallback={<ClipLoader/>}>
+            <Await resolve={hostedVanDetailPromise.hostVanDetail}>
+              {(hostedVanDetailPromise)=> {
+                return (
+                  <>
+                    <HostVanDetail hostedVanDetailPromise={hostedVanDetailPromise}/>
+                    <nav className='host-van-details__nav'>
+                      <ul>
+                        <li><NavLink to="." end className={({isActive})=> isActive ? 'link--selected' : null }>Details</NavLink></li>
+                        <li><NavLink to="pricing" className={({isActive})=> isActive ? 'link--selected' : null }>Pricing</NavLink></li>
+                        <li><NavLink to='photos' className={({isActive})=> isActive ? 'link--selected' : null }>Photos</NavLink></li>
+                      </ul>
+                    </nav>
+                    <Outlet context={{hostedVanDetailPromise}}/>
+                  </>
+                )
+              }}
+
+            </Await>
+          </Suspense>
         </div>
     </main>
   )

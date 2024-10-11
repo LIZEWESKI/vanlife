@@ -2,13 +2,13 @@ import React from 'react'
 import { useOutletContext } from "react-router-dom";
 import ClipLoader from "react-spinners/ClipLoader";
 const HostDetails = () => {
-  const {hostedVanDetail} = useOutletContext();
+  const {hostedVanDetailPromise} = useOutletContext();
   return (
-    hostedVanDetail ? 
+    hostedVanDetailPromise ? 
     <div className="host-van__details">
-      <p><span>Name:</span> {hostedVanDetail.name}</p>
-      <p><span>Category:</span> {hostedVanDetail.type}</p>
-      <p><span>Description:</span> {hostedVanDetail.description}</p>
+      <p><span>Name:</span> {hostedVanDetailPromise.name}</p>
+      <p><span>Category:</span> {hostedVanDetailPromise.type}</p>
+      <p><span>Description:</span> {hostedVanDetailPromise.description}</p>
       <p><span>Visibility:</span> Public</p>
     </div>
     : 
